@@ -10,13 +10,15 @@
       
       
       
+        <link rel="next" href="lab1/">
+      
       
       <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.40">
     
     
       
-        <title>WXOHandson</title>
+        <title>wxoHandson</title>
       
     
     
@@ -95,7 +97,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="WXOHandson" class="md-header__button md-logo" aria-label="WXOHandson" data-md-component="logo">
+    <a href="." title="wxoHandson" class="md-header__button md-logo" aria-label="wxoHandson" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -109,7 +111,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            WXOHandson
+            wxoHandson
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -181,13 +183,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="WXOHandson" class="md-nav__button md-logo" aria-label="WXOHandson" data-md-component="logo">
+    <a href="." title="wxoHandson" class="md-nav__button md-logo" aria-label="wxoHandson" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    WXOHandson
+    wxoHandson
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -196,18 +198,28 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="agenda/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="." class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Agenda
+    はじめに
   </span>
   
 
       </a>
+      
     </li>
   
 
@@ -239,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="GenAI/" class="md-nav__link">
+      <a href="lab2_GenAI/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -259,7 +271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="lab2/" class="md-nav__link">
+      <a href="lab3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -279,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="lab3/" class="md-nav__link">
+      <a href="lab4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -299,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="AIAssistant/" class="md-nav__link">
+      <a href="lab5_AIAssistant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -348,7 +360,50 @@
 
 
 <h1 id="_1">はじめに</h1>
-<p>watsonx Orchestrateのハンズオンです。</p>
+<p>watsonx Orchestrateのハンズオンです。
+以下の内容を通じて、基本的な操作を学習します。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">#</th>
+<th>内容</th>
+<th style="text-align: center;">所要想定時間(分)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="lab1/">Lab1</a></td>
+<td>watsonx Orchestrateへのアクセス方法を確認し、カスタム・スキルを構成します。</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="lab2_GenAI/">Lab2</a></td>
+<td>Automation Builderで生成AIのサービスを実装します。</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="lab3/">Lab3</a></td>
+<td>カスタム・スキルとプリビルド・スキルを組み合わせてスキルフローを作成します。</td>
+<td style="text-align: center;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="lab4/">Lab4</a></td>
+<td>Automation Builderで意思決定サービスを実装します。</td>
+<td style="text-align: center;">45</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="lab5_AIAssistant/">Lab5</a></td>
+<td>AI Assistant Builderを用いてAI Assistant Builderを実装します。</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="OpenAPI/">オプション</a></td>
+<td>OpenAPI Builderを用いて Open API の仕様書の作成、編集、生成を練習します。</td>
+<td style="text-align: center;">25</td>
+</tr>
+</tbody>
+</table>
+<p>製品のマニュアルについては、<a href="https://www.ibm.com/docs/ja/watsonx/watson-orchestrate/current" target="_blank" rel="noopener noreferrer">こちら</a>をご参照ください。</p>
 
 
 
