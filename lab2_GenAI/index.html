@@ -20,7 +20,7 @@
     
     
       
-        <title>Lab2 GenAI - wxoHandson</title>
+        <title>Lab2 Generative AI - wxoHandson</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab2-genai" class="md-skip">
+        <a href="#lab2-generative-ai" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab2 GenAI
+              Lab2 Generative AI
             
           </span>
         </div>
@@ -256,7 +256,7 @@
           
   
   <span class="md-ellipsis">
-    Lab2 GenAI
+    Lab2 Generative AI
   </span>
   
 
@@ -267,7 +267,7 @@
         
   
   <span class="md-ellipsis">
-    Lab2 GenAI
+    Lab2 Generative AI
   </span>
   
 
@@ -289,15 +289,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      前提条件
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ai" class="md-nav__link">
     <span class="md-ellipsis">
       生成AIを作成してみよう
@@ -307,7 +298,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       プロンプトを作成してみよう
     </span>
@@ -334,7 +325,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       観光地のお勧めメールを生成して、スキルをテストしてみよう
     </span>
@@ -343,7 +334,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       お疲れさまでした！
     </span>
@@ -390,7 +381,7 @@
         
   
   <span class="md-ellipsis">
-    Lab4 Automation
+    Lab4 Decision
   </span>
   
 
@@ -454,14 +445,9 @@
                   
 
 
-<h1 id="lab2-genai">Lab2 GenAI</h1>
+<h1 id="lab2-generative-ai">Lab2 Generative AI</h1>
 <p>watsonx Orchestrate では、生成AIをカスタムスキルとして外部から呼び出すことが可能ですが、Project(旧 Automation Builder)で生成AIのプロンプトを作成し、スキルとして使用することができます。
 このLabでは、顧客の特性に応じてメールを生成するプロンプトを作成します。</p>
-<h2 id="_1">前提条件</h2>
-<ol>
-<li>watsonx Orchestrateの環境にアクセスできること。</li>
-<li>IBM-idを用いてログイン可能であること。</li>
-</ol>
 <h2 id="ai">生成AIを作成してみよう</h2>
 <p>Skill studioで、まず Project を作成し、そのコンポーネントの1つとして 生成AI のプロンプトを作成することができます。</p>
 <ol>
@@ -483,14 +469,14 @@
 </li>
 <li>
 <p>Name の欄に <strong><em>YourInitials</em> generate recommendation mail</strong> と入力して、<strong>Create</strong> をクリックします。
-<a class="glightbox" href="../lab2_GenAI_images/image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab2_GenAI_images/image-4.png" /></a></p>
+ <a class="glightbox" href="../lab2_GenAI_images/image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab2_GenAI_images/image-4.png" /></a></p>
 </li>
 <li>
 <p>Project と 生成AIのコンポーネント が作成されました。生成AIのコンポーネントが作成されると、プロンプト・エディターが開きます。
-<a class="glightbox" href="../lab2_GenAI_images/image-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab2_GenAI_images/image-5.png" /></a></p>
+ <a class="glightbox" href="../lab2_GenAI_images/image-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab2_GenAI_images/image-5.png" /></a></p>
 </li>
 </ol>
-<h2 id="_2">プロンプトを作成してみよう</h2>
+<h2 id="_1">プロンプトを作成してみよう</h2>
 <p>プロンプト・エディターを用いて、プロンプトを作成し、出力を生成することができます。</p>
 <ol>
 <li>
@@ -726,7 +712,7 @@
 </li>
 </ol>
 <p><a class="glightbox" href="../lab2_GenAI_images/image-64.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab2_GenAI_images/image-64.png" /></a></p>
-<h2 id="_3">観光地のお勧めメールを生成して、スキルをテストしてみよう</h2>
+<h2 id="_2">観光地のお勧めメールを生成して、スキルをテストしてみよう</h2>
 <p>このセクションでは、作成したスキルをテストする方法について説明します。 スキルをテストするには、カタログからスキルを追加して実行する必要があります。 このための手順は、以下のとおりです。</p>
 <ol>
 <li>
@@ -769,10 +755,12 @@
 <p>以上で、メールのコンテンツを生成するテストは完了です。</p>
 </li>
 </ol>
-<h2 id="_4">お疲れさまでした！</h2>
+<h2 id="_3">お疲れさまでした！</h2>
 <p>このLabでは、Skill studioのProjectで生成AIのプロンプトを作成しました。
 Context や Prompt input を記入したり、変数を設定したりして、出力を生成しました。
 また、トークンや Training examples の調整を行うことで、出力の精度を向上させることができました。</p>
+<p><strong>ご参考：</strong> <a href="https://www.ibm.com/docs/ja/watsonx/watson-orchestrate/current?topic=projects-creating-generative-ai" target="_blank" rel="noopener noreferrer">生成AIについて</a>
+       <br /> </p>
 
 
 
