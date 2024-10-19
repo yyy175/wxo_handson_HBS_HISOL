@@ -349,24 +349,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      前提条件
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#watsonx-orchestrate" class="md-nav__link">
-    <span class="md-ellipsis">
-      watsonx Orchestrateへのアクセス
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ai-assistant" class="md-nav__link">
     <span class="md-ellipsis">
       AI Assistantの作成
@@ -403,7 +385,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       お疲れさまでした！
     </span>
@@ -455,38 +437,24 @@
 
 
 <h1 id="lab5-ai-assistant-builder">Lab5 AI Assistant Builder</h1>
-<p>このLabでは、AI Assistant Builderを用いて、AI Assistantを構築します。生成AIを用いて回答するアクションや、これまでのハンズオンで作成したスキルを呼び出すアクションを定義し、動作を確認します。</p>
-<h2 id="_1">前提条件</h2>
-<ol>
-<li>watsonx Orchestrateの環境にアクセスできること。<br />
-<a href="https://dl.watson-orchestrate.ibm.com/">https://dl.watson-orchestrate.ibm.com/</a> 　　 </li>
-<li>IBM-idを用いてログイン可能であること。</li>
-<li>AI Assistant Builderを用いて自動化を作成する権限があること。(Builder権限)</li>
-</ol>
-<h2 id="watsonx-orchestrate">watsonx Orchestrateへのアクセス</h2>
-<ol>
-<li>watsonx Orchestrateにログインします。</li>
-<li>IBM-idを入力して、<strong>Continue</strong> ボタンをクリックします。</li>
-<li>複数テナントに所属する場合には、テナント選択画面が表示されるので、適切なテナント名を選択してください。<br />
-<a class="glightbox" href="../lab1_images/image-0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab1_images/image-0.png" /></a></li>
-</ol>
+<p>このLabでは、AI Assistant Builderを用いて、AI Assistantを構築します。生成AIを用いて回答するアクションや、これまでのハンズオンで作成したスキルを呼び出すアクションを定義し、動作を確認します</p>
 <h2 id="ai-assistant">AI Assistantの作成</h2>
 <ol>
 <li>
-<p><strong>AI Assistant Builder</strong>をクリックします。もしくは、左上のメニューから<strong>AI Assistant Builder</strong>を選択してもOKです。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-0.png" /></a></p>
+<p>watsonx Orchestrateにログインし、<strong>AI Assistant Builder</strong>をクリックします。もしくは、左上のメニューから<strong>AI Assistant Builder</strong>を選択してください。<br />
+<a class="glightbox" href="../lab5_images/image-0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-0.png" /></a></p>
 </li>
 <li>
-<p>画面上部右にAssistantのリストがあります。そこを展開し、<strong>Create New ＋</strong>をクリックします。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-1.png" /></a></p>
+<p>画面上部にAssistantのリストがあります。そこを展開し、<strong>Create New ＋</strong>をクリックします。<br />
+<a class="glightbox" href="../lab5_images/image-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-1.png" /></a></p>
 </li>
 <li>
-<p>Assistantの作成ダイアログが表示されるので、<strong>あなたのイニシャル-Assistant</strong>という名前を入力し、<strong>Create assistant</strong>をクリックしてください。Assistant Languageとして日本語を選択することも可能ですが、現時点で一部の機能が使用できないため<strong>English</strong>のままにしてください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-2.png" /></a></p>
+<p>Assistantの作成ダイアログが表示されるので、<strong><em>YourInitials</em>-Assistant</strong>という名前を入力し、<strong>Create assistant</strong>をクリックしてください。Assistant Languageとして日本語を選択することも可能ですが、現時点で一部の機能が使用できないため<strong>English</strong>のままにしてください。<br />
+<a class="glightbox" href="../lab5_images/image-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-2.png" /></a></p>
 </li>
 <li>
 <p>Assistantが作成されます。画面下部に全体のアーキテクチャが表示されています。このハンズオンでは、<strong>General purpose</strong>、<strong>AI-guided</strong>、<strong>Skill-based</strong>の3つの動作を確認します。    <br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-3.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-3.png" /></a></p>
 </li>
 </ol>
 <h2 id="llm">LLMによる基本動作の確認</h2>
@@ -494,26 +462,26 @@
 <ol>
 <li>
 <p>左側のリストより、<strong>Generative AI</strong> を選択してください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-4.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-4.png" /></a></p>
 </li>
 <li>
 <p>以下のような画面が表示されます。この画面からは生成AIに関する設定を行うことが可能です。上部選択リストを展開し、利用可能なLLMを確認してください。今回はデフォルトで設定されている、graniteをそのまま使用します。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-5.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-5.png" /></a></p>
 </li>
 <li>
 <p>右下に表示されているプレビューの入力欄に<strong>What is IBM?</strong>と入力して送信してください。LLMによって一般的な質問に対しての回答が生成されます。　　<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-6.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-6.png" /></a></p>
 </li>
 <li>
-<p>LLMが一般的な回答を行うかどうかは、Answer behaviorのGeneral purpose answeringで設定することが可能です。右側にあるトグルスイッチをクリックし、OFFにしてください。
-<a class="glightbox" href="../lab5_AIAssistant_images/image-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-8.png" /></a></p>
+<p>LLMが一般的な回答を行うかどうかは、<strong>Answer behavior</strong> の <strong>General-purpose answering</strong> で設定することが可能です。右側にあるトグルスイッチをクリックし、OFFにしてください。
+ <a class="glightbox" href="../lab5_images/image-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-7.png" /></a></p>
 </li>
 <li>
 <p>再びプレビューの入力欄に<strong>What is IBM?</strong>と入力してください。先ほどとは回答が異なることを確認します。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-9.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-8.png" /></a></p>
 </li>
 <li>
-<p>いくつかのLLMを切り替え、General purpose answeringをONにした状態で様々な質問をして回答を確認してみてください。  </p>
+<p><strong>General-purpose answering</strong> をONに戻し、いくつかのLLMを切り替えて、様々な質問をして回答を確認してみてください。  </p>
 </li>
 </ol>
 <h2 id="ai-guided-action">AI-Guided Actionの作成</h2>
@@ -521,84 +489,97 @@
 <ol>
 <li>
 <p>左側のメニューより、<strong>Actions</strong>を選択してください。  <br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-10.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-10.png" /></a></p>
 </li>
 <li>
 <p><strong>Create action +</strong>をクリックしてください。  <br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-11.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-11.png" /></a></p>
 </li>
 <li>
 <p>作成可能な3つのactionが表示されます。<strong>AI-Guilded action</strong>を選択してください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-12.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-12.png" /></a></p>
 </li>
 <li>
 <p>今回は日本語で動作するアクションを作成してみます。ダイアログが表示されるので、<strong>休暇の申請</strong>と入力し、<strong>Save</strong>をクリックしてください。 <br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-27.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-27.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-13.png" /></a></p>
 </li>
 <li>
-<p>左側のConfigurationをクリックすると設定画面が表示されます。Select modelから使用するLLMを選択することが可能です。今回は<strong>llama3-8b-instruct</strong>を選択してください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-28.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-28.png" /></a></p>
+<p>左側の <strong>Configuration</strong> をクリックすると設定画面が表示されます。Select modelから使用するLLMを選択することが可能です。今回は<strong>llama3-8b-instruct</strong>を選択してください。<br />
+<a class="glightbox" href="../lab5_images/image-14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-14.png" /></a></p>
 </li>
 <li>
-<p>Add knowledgeの欄に以下のテキストをコピー＆ペーストしてください。ここにLLMが動作する際に使用する知識を記入することで、知識に基づいた回答を生成することが可能です。<br />
-<div class="highlight"><pre><span></span><code>年次有給休暇の申請方法
+<p><strong>Add knowledge</strong> の欄に以下のテキストをコピー＆ペーストしてください。ここにLLMが動作する際に使用する知識を記入することで、知識に基づいた回答を生成することが可能です。<br />
+ <div class="highlight"><pre><span></span><code>年次有給休暇の申請方法
 
 年次有給休暇の申請は、原則としてWorkdayで事前に行ってください。
 所属長は、Workdayにて申請された内容を確認し、速やかに承認処理を行ってください。Workdayの操作方法についてはこちらをご参照ください。
 （注）やむを得ない事情により申請が事後となった場合は、欠勤後の出社第1日目の終業時刻または当該欠勤日から1カ月後のうち、いずれか早い到来日までに所属長に申し出ることで、欠勤第1日から年休に振り替えることができます。ただし、無断欠勤の場合は、振り替えることができません。
 </code></pre></div>
-<a class="glightbox" href="../lab5_AIAssistant_images/image-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-15.png" /></a></p>
+ <a class="glightbox" href="../lab5_images/image-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-15.png" /></a></p>
 </li>
 <li>
-<p>Add prompt instructionsの欄により詳細な指示を指定することが可能です。今回は日本語で回答することを明示的に指定するため、<strong>日本語で簡潔に回答してください</strong>と記入してください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-16.png" /></a></p>
+<p><strong>Add prompt instructions</strong> の欄により詳細な指示を指定することが可能です。今回は日本語で回答することを明示的に指定するため、<strong>日本語で簡潔に回答してください。</strong>と記入してください。<br />
+<a class="glightbox" href="../lab5_images/image-16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-16.png" /></a></p>
 </li>
 <li>
 <p>右上のアイコンより変更を保存してください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-18.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-17.png" /></a></p>
 </li>
 <li>
-<p>右下のチャットのプレビューに<strong>休暇の申請はどこから行いますか？</strong>と記入して送信してください。Add knowledgeに記入した知識を元に回答が適切に生成されることを確認してください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-17.png" /></a></p>
+<p>右下のチャットのプレビューに <strong>休暇の申請はどこから行いますか？</strong> と記入して送信してください。Add knowledgeに記入した知識を元に回答が適切に生成されることを確認してください。<br />
+<a class="glightbox" href="../lab5_images/image-18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-18.png" /></a></p>
 </li>
 <li>
 <p>休暇に関する質問をいくつかして、動作を確認してください。</p>
 </li>
 <li>
-<p>右上の<strong>x</strong>をクリックして、設定画面を閉じてください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-19.png" /></a></p>
+<p>右上の <strong>x</strong> をクリックして、設定画面を閉じてください。<br />
+<a class="glightbox" href="../lab5_images/image-19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-19.png" /></a></p>
 </li>
 </ol>
 <h2 id="skill-based-action">Skill based Actionの作成</h2>
-<p>Skill based actionを用いることで、AI-Assistantからスキルを呼び出すことが可能です。今回はAutomation Builderで作成したスキルを呼び出すアクションを定義してみましょう。なお、アプリケーションの接続が必要なスキルは管理者による登録作業が必要です。  </p>
+<p>Skill based actionを用いることで、AI-Assistantからスキルを呼び出すことが可能です。今回はLab4で作成したスキルを呼び出すアクションを定義してみましょう。なお、アプリケーションの接続が必要なスキルは管理者による登録作業が必要です。  </p>
 <ol>
 <li>
-<p><strong>New action</strong>をクリックしてください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-20.png" /></a></p>
+<p><strong>New action</strong> をクリックしてください。<br />
+<a class="glightbox" href="../lab5_images/image-20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-20.png" /></a></p>
 </li>
 <li>
 <p>Skill-based actionをクリックしてください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-21.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-21.png" /></a></p>
+<a class="glightbox" href="../lab5_images/image-21.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-21.png" /></a></p>
 </li>
 <li>
-<p>スキルの選択画面が表示されるので、Automation Builderのハンズオンで作成した<strong>XXPersonalLoan</strong>を選択し、右上の<strong>Next</strong>をクリックしてください。 （Automation Builderのハンズオンを実施していない場合は任意のスキルを選択してください） 
-<a class="glightbox" href="../lab5_AIAssistant_images/image-23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-23.png" /></a></p>
+<p>スキルの選択画面が表示されるので、Lab4のハンズオンで作成した <strong><em>YourInitials</em>_Personal_Loan</strong> を選択し、右上の <strong>Next</strong> をクリックしてください。 （Lab4のハンズオンを実施していない場合は任意のスキルを選択してください） 
+ <a class="glightbox" href="../lab5_images/image-22.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-22.png" /></a></p>
 </li>
 <li>
-<p>Phraseとして<strong>ローンの審査</strong>と入力し右上の<strong>create and review</strong>をクリックしてください。なお、スキルを呼び出すためのフレーズは複数指定することで認識の精度が高まります。
-<a class="glightbox" href="../lab5_AIAssistant_images/image-24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-24.png" /></a></p>
+<p><strong>New action</strong> でスキルを呼び出すためのフレーズとなる <strong>ローンの審査</strong> と入力して <strong>Save</strong> をクリックします。
+ <a class="glightbox" href="../lab5_images/image-23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-23.png" /></a></p>
 </li>
 <li>
-<p>右下のチャット・プレビューに<strong>ローンの審査</strong>と記入し、送信してください。スキルが呼び出され入力フォームが表示されます。なお、watsonx Orchestrateでは設定でフォーム入力にするか、チャットで1つづつ入力パラメータを確認するかの設定が可能です。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-25.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-25.png" /></a></p>
+<p>さきほど入力した <strong>ローンの審査</strong> がフレーズとして登録されていることが確認できます。なお、ここでスキルを呼び出すためのフレーズは追加することができます。複数のフレーズを指定することで認識の精度が高まります。
+ <a class="glightbox" href="../lab5_images/image-24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-24.png" /></a></p>
 </li>
 <li>
-<p><strong>Close</strong>をクリックしてください。<br />
-<a class="glightbox" href="../lab5_AIAssistant_images/image-26.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_AIAssistant_images/image-26.png" /></a></p>
+<p>右上のアイコンより変更を保存してください。<br />
+<a class="glightbox" href="../lab5_images/image-17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-17.png" /></a></p>
+</li>
+<li>
+<p>右下のチャット・プレビューに <strong>ローンの審査</strong> と記入し、送信してください。スキルが呼び出され入力フォームが表示されます。なお、watsonx Orchestrateでは設定でフォーム入力にするか、チャットで1つづつ入力パラメータを確認するかの設定が可能です。
+ <a href="https://www.ibm.com/docs/ja/watsonx/watson-orchestrate/current?topic=actions-defining-how-interact-skill-in-conversation#configuring-multi-turn-conversations" target="_blank" rel="noopener noreferrer">こちら</a>
+ をご参照ください。
+ <a class="glightbox" href="../lab5_images/image-25.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-25.png" /></a></p>
+</li>
+<li>
+<p>右上の <strong>x</strong> をクリックして、設定画面を閉じてください。<br />
+<a class="glightbox" href="../lab5_images/image-19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../lab5_images/image-19.png" /></a></p>
 </li>
 </ol>
-<h2 id="_2">お疲れさまでした！</h2>
-<p>AI Assistant Builderを用いてAIアシスタントを実装しました。AI Assistant Builderを用いることで、AI Assistantを迅速に実装することが可能です。また、作成したAI AssitantはWebサイトに埋め込んだり、Slackなどと連携することも可能です。　</p>
+<h2 id="_1">お疲れさまでした！</h2>
+<p>AI Assistant Builderを用いてAIアシスタントを実装しました。AI Assistant Builderを用いることで、AI Assistantを迅速に実装することが可能です。また、作成したAI AssitantはWebサイトに埋め込んだり、Slackなどと連携することも可能です。　
+AI Assistant Builder については、
+<a href="https://www.ibm.com/docs/ja/watsonx/watson-orchestrate/current?topic=building-ai-assistants" target="_blank" rel="noopener noreferrer">こちら</a>
+もご参照ください。</p>
 
 
 
