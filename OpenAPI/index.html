@@ -454,19 +454,21 @@
 <a class="glightbox" href="../OpenAPI_images/image-0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../OpenAPI_images/image-0.png" /></a> </p>
 </li>
 <li>
-<p>右上にあるCreateボタンをクリック、Import APIをクリックします。<br />
+<p>右上にある <strong>Create</strong> ボタンをクリック、<strong>Import API</strong> をクリックします。<br />
 <a class="glightbox" href="../OpenAPI_images/image-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../OpenAPI_images/image-1.png" /></a></p>
 </li>
 <li>
-<p><strong>OpenAPI builder (experimental)</strong> を選択し、OpenAPI builder のタイルをクリックします。
+<p><strong>OpenAPI builder (experimental)</strong> を選択し、<strong>OpenAPI builder</strong> のタイルをクリックします。
  <a class="glightbox" href="../OpenAPI_images/image-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../OpenAPI_images/image-2.png" /></a></p>
 </li>
 <li>
 <p><strong>AI generate a new OpenAPI spec</strong> を選択します。</p>
 <ol>
-<li><strong>Import URL</strong> の欄にAPI仕様書を作成したい文書のURLを入力します。</li>
-<li>例えば、Github の REST API からOpenAPIの仕様書を作りたい場合は、以下のURL（https://docs.github.com/en/enterprise-server@3.5/rest/orgs/orgs）を入力します。</li>
+<li><strong>Import URL</strong> の欄にAPI仕様書を作成したい文書のURLを入力します。<ul>
+<li>例えば、Github の REST API からOpenAPIの仕様書を作りたい場合は次のURLを入力します。<br /> https://docs.github.com/en/enterprise-server@3.5/rest/orgs/orgs</li>
 <li>空のボックスをクリックすると、チュートリアル用のURLが候補として表示されます。</li>
+</ul>
+</li>
 <li><strong>Generate</strong> をクリックします。
  <a class="glightbox" href="../OpenAPI_images/image-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../OpenAPI_images/image-3.png" /></a>  </li>
 </ol>
@@ -498,8 +500,8 @@
 <li>
 <p>ご自身のローカルシステムから仕様書を開きたい時は、</p>
 <ol>
-<li><strong>Choose file</strong> を選択します。</li>
-<li>必要なファイルを選択し、<strong>Open</strong> をクリックします。</li>
+<li><strong>ファイルを選択</strong> をクリックします。</li>
+<li>必要なファイルを選択し、<strong>開く</strong> をクリックします。</li>
 <li><strong>Open Local</strong> をクリックします。
  <a class="glightbox" href="../OpenAPI_images/image-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../OpenAPI_images/image-8.png" /></a></li>
 </ol>
@@ -533,19 +535,19 @@
 <p>以下のフォーマットから、仕様書を確認、編集することができます。</p>
 <ul>
 <li>
-<p><strong>Visual+AI view</strong>
- Visual+AI view では、視覚的な表示で API 仕様書を作成することができます。AI による提案を使用することもできます。このエディターで編集する方法については、
+<p><strong>Visual+AI view</strong><br /> 
+ Visual+AI view では、視覚的な表示で API 仕様書を作成することができます。AI による提案を使用することもできます。このエディターで編集する方法については
  <a href="https://www.ibm.com/docs/ja/watson-orchestrate?topic=builder-using-visual-editor-in-openapi" target="_blank" rel="noopener noreferrer">こちら</a>
- もご参照ください。
+ をご参照ください。
  <a class="glightbox" href="../OpenAPI_images/image-20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../OpenAPI_images/image-20.png" /></a></p>
 </li>
 <li>
-<p><strong>JSON view</strong>
+<p><strong>JSON view</strong><br /> 
  JSON View では、テキスト形式で API 仕様書を作成できます。
  <a class="glightbox" href="../OpenAPI_images/image-21.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../OpenAPI_images/image-21.png" /></a></p>
 </li>
 <li>
-<p><strong>OpenAPI view</strong>
+<p><strong>OpenAPI view</strong><br /> 
  OpenAPI view では、標準のAPI仕様書の形式に従って表示されます。
  <a class="glightbox" href="../OpenAPI_images/image-22.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../OpenAPI_images/image-22.png" /></a></p>
 </li>
@@ -558,10 +560,12 @@
 <p>ダウンロードするには、エディターの画面で <strong>Download spec</strong> をクリックします。
 <a class="glightbox" href="../OpenAPI_images/image-24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../OpenAPI_images/image-24.png" /></a></p>
 <h2 id="_1">お疲れさまでした！</h2>
-<p>このLabでは、OpenAPI builder を用いて、OpenAPI の仕様書を作成、編集、生成する方法を確認しました。
-仕様書はWebページからAIで自動生成できるほか、既存ファイルの編集や、新規作成も可能です。
-作成時のビューは、Visual+AI view、JSON view、OpenAPI view の3つを使用でき、AIによる提案も活用できます。
-仕様書の作成後は、watsonx Orchestrate にインポートしてスキルとして利用できます。</p>
+<p>このLabでは、OpenAPI builder を用いて、OpenAPI の仕様書を作成、編集、生成する方法を確認しました。</p>
+<ul>
+<li>仕様書はWebページからAIで自動生成できるほか、既存ファイルの編集や、新規作成も可能です。</li>
+<li>作成時のビューは、Visual+AI view、JSON view、OpenAPI view の3つを使用でき、AIによる提案も活用できます。</li>
+<li>仕様書の作成後は、watsonx Orchestrate にインポートしてスキルとして利用できます。</li>
+</ul>
 
 
 
